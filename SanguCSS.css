@@ -1,0 +1,17 @@
+html{
+    background-color: rgb(255, 162, 162);
+}
+#sangutitulo{
+    width: 300px;
+    height: 300px;
+}
+#Titulo{
+    width: auto;
+    height: 256px;
+    margin-top: -100px;
+}
+h1{
+    background-image: url(changu.png);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
