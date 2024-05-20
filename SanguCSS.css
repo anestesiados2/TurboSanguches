@@ -1,17 +1,22 @@
-html{
-    background-color: rgb(255, 162, 162);
+html {
+  Background: rgb(255, 158, 158);
+  background: radial-gradient(circle, rgba(255, 158, 158, 1) 0%, rgba(113, 21, 36, 1) 100%);
 }
-#sangutitulo{
-    width: 300px;
-    height: 300px;
+
+#banner {
+  height: 800px;
 }
-#Titulo{
-    width: auto;
-    height: 256px;
-    margin-top: -100px;
+
+#Pag2BT{
+  font-size: 100px;
+  text-decoration: none;
+  padding-left: 800px;
+  padding-right: 850px;
 }
-h1{
-    background-image: url(changu.png);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+#Pag2BT:not(:hover){
+  color: rgb(221, 255, 32);
+}
+#box{
+  border-radius: 50px;
+  background-color:#da253d;
 }
