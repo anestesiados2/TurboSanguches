@@ -1,0 +1,46 @@
+#titulo {
+    background-color: rgb(0, 0, 0);
+    border: 1px solid black;
+    text-align: center;
+    margin: 0;
+    color: white;
+}
+.menu {
+    background-color: rgb(179, 179, 179);
+    border: 1px solid black;
+}
+.enlaces li {
+    display: inline;
+    margin-right: 10px;
+}
+#datos {
+    background-color: rgb(0, 0, 0);
+    border: 1px solid black;
+    text-align: center;
+    margin: 0;
+    color: white;
+    padding-left: 10px;
+}
+#cuerpo {
+    background-color: rgb(158, 158, 158);
+    padding: 30px;
+}
+.producto {
+    background-color: beige;
+    border: 1px solid black;
+    width: 240px;
+    height: 300px;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    text-align: left;
+}
+.img {
+    border: 1px solid black;
+}
+.contenido {
+    background-color: rgba(255, 255, 255, 0.721);
+    border: 1px solid black;
+    margin: 15px;
+    padding: 8px;
+}
