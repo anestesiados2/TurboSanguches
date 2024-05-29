@@ -1,9 +1,10 @@
 html{
     background: rgb(255,158,158);
-    background: radial-gradient(circle, rgba(255,158,158,1) 0%, rgba(113,21,36,1) 100%);
+    background: radial-gradient(circle, rgb(199, 140, 140) 0%, rgb(255, 0, 43) 100%);
 }
 #banner{
-    height: 500px
+    height: 500px;
+    border: 2px solid black;
 }
 #IconNext{
     padding-left: 1100px;
@@ -68,7 +69,7 @@ html{
     display: inline-flex;
     align-items: center;
     gap: .75rem;
-    background-color: var(--clr);
+    background-color: rgb(189, 61, 136);
     color: #fff;
     border-radius: 10rem;
     font-weight: 600;
