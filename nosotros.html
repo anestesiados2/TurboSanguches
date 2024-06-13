@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Turbo Sanguches/ nosotros</title>
     <link href="Nosotros2.css" rel="stylesheet">
 </head>
+
 <body>
     <header id="titulo">
         <h1>Sobre Nosotros</h1>
@@ -21,17 +23,47 @@
     </header>
     <section id="cuerpo">
         <div class="contenido">
-            <h1>Titulo</h1>
-            <p>texto extra</p>
+            <center>
+                <!-- esta parte del codigo utiliza la funcion "Evento de navegador", "clipboard"-->
+                <p id="Link">
+                    https://www.instagram.com/turbosanguches?igsh=MWt3eTExZG91NHlvcg==
+                </p>
+                <button class="Btn" id="ButtonAlert" onclick="copiarContenido()">
+                    <svg viewBox="0 0 512 512" class="svgIcon" height="1em">
+                        <path
+                            d="M288 448H64V224h64V160H64c-35.3 0-64 28.7-64 64V448c0 35.3 28.7 64 64 64H288c35.3 0 64-28.7 64-64V384H288v64zm-64-96H448c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H224c-35.3 0-64 28.7-64 64V288c0 35.3 28.7 64 64 64z">
+                        </path>
+                    </svg>
+                    <p class="text">COPY</p>
+                    <span class="effect"></span>
+                </button>
+
+                <script>
+                    const button = document.querySelector("button");
+                    button.onclick = function () {
+                        alert("Link copiado en tu portapapeles");
+                    }
+                </script>
+
+                <script>
+                    let texto = document.getElementById('Link').innerHTML;
+                    const copiarContenido = async () => {
+                        try {
+                            await navigator.clipboard.writeText(texto);
+                            console.log('Contenido copiado al portapapeles');
+                        } catch (err) {
+                            console.error('Error al copiar: ', err);
+                        }
+                    }
+                </script>
+            </center>
         </div>
-        <div class="contenido">
-            <h1>titulo 2</h1>
-            <p>texto extra</p>
-        </div>
+
     </section>
     <footer id="datos">
         <h3>Turbo Sanguches</h3>
-        <p>2024  Derechos reservados de la pagina a <strong>Turbo Sanguches</strong> </p>
+        <p>2024 Derechos reservados de la pagina a <strong>Turbo Sanguches</strong> </p>
     </footer>
 </body>
+
 </html>
